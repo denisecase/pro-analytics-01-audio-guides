@@ -1,8 +1,8 @@
 # pro-analytics-01 (audio guides)
 
-These **AI-generated two-person podcasts** are designed to complement the written steps in [pro-analytics-01](https://github.com/denisecase/pro-analytics-01). 
+These **AI-generated two-person podcasts** are designed to complement the written steps in [pro-analytics-01](https://github.com/denisecase/pro-analytics-01) descrining professional Python.
 
-Audio is **supplementary only** and not a replacement for the written instructions. 
+These [audio guides](https://denisecase.github.io/pro-analytics-01-audio-guides/) are **supplementary only** and not a replacement for the written instructions. 
 The guides are **not necessarily recommended**. 
 They may be distracting, and the speakers mispronounce key files and commands.
 They are mostly interesting from a state-of-the-art perspective.
