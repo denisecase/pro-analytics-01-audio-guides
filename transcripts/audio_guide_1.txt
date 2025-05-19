@@ -1,0 +1,348 @@
+0.031 - 1.273:  Welcome to the Deep Dive.
+1.774 - 5.581: We're kicking off a special three-part series today.
+5.661 - 6.062: That's right.
+6.343 - 8.366: All based on the Professional Python Guide.
+9.088 - 14.498: Think of this first part as, well, getting your workshop set up perfectly before you start building.
+14.518 - 14.959: Exactly.
+15.039 - 19.447: It's all about setting up your machine, your computer, for serious Python work.
+19.487 - 20.629: These are the fundamentals.
+20.729 - 20.95: Right.
+21.07 - 22.753: And this is crucial stuff, isn't it?
+22.873 - 23.895: Getting the machine ready.
+23.909 - 24.61:  Absolutely.
+24.63 - 30.098: Our mission here is to walk you through the first eight steps in the guide.
+30.579 - 37.349: These are foundational tasks you do basically when you get a new machine or maybe upgrade your main tool.
+37.489 - 39.292: Setting that solid base.
+39.312 - 39.452: Mm-hmm.
+39.472 - 40.674: Establishing the groundwork.
+40.694 - 44.92: Now, we know setups can vary, so the guide has OS-specific instructions, right?
+45.1 - 46.242: Yes, definitely.
+46.262 - 48.125: So as we go, we'll give you a heads-up.
+48.345 - 50.929: This is for Windows, this is for Mac, this is for Linux.
+50.949 - 52.03: We'll make that really clear.
+52.131 - 52.431: Good.
+52.765 - 56.921:  And one other thing for anyone who's maybe newer to Python, we're actually going to skip step two for now.
+57.122 - 59.451: It's an optional bit about package managers.
+59.583 - 61.125:  Yeah, let's keep it simple to start.
+61.245 - 65.272: We'll use direct installers later, which is generally easier if you're just beginning.
+65.492 - 65.812: Perfect.
+65.933 - 66.814: Okay, let's dive right in.
+66.954 - 67.375: Step one.
+67.715 - 68.376: Step one.
+68.416 - 70.9: Sounds basic, but it's important.
+71.561 - 75.106: Enabling file extensions and viewing hidden files and folders.
+75.307 - 82.758: Okay, so why does seeing the .py or .ipmb or .csv at the end of a file name actually matter?
+82.918 - 83.599: Seems small.
+83.579 - 89.39:  Well, it's fundamental because that little extension tells both you and the computer what kind of file it is.
+90.112 - 91.975: Python needs to know it's a Python file.
+91.995 - 94.199: Your data tools need to know it's a CSV and so on.
+94.761 - 98.568: Plus, when you share your work, you know, others need to see those extensions too.
+98.608 - 100.512: It just prevents a lot of confusion down the line.
+100.612 - 101.514: Avoids headaches.
+101.534 - 101.794: Got it.
+101.834 - 102.656: Yeah.
+102.696 - 103.618: And hidden files.
+104.038 - 104.9: What are we looking for there?
+104.92 - 105.942: Why uncover those?
+105.922 - 111.492:  Yeah, hidden files often store important configuration settings for your system, for your apps.
+111.873 - 118.064: As a developer, especially when troubleshooting or working on complex things, you sometimes need to see or even tweak those settings.
+118.505 - 122.833: Making them visible just gives you the full picture, all the tools in the workshop, not just the obvious ones.
+122.881 - 123.322:  Makes sense.
+123.823 - 124.785: Okay, let's get practical.
+125.065 - 127.37: Mac or Linux users, how do you make this happen?
+127.711 - 130.015: Show extensions, see hidden files.
+130.035 - 131.699: Okay, on a Mac, you'll open Finder.
+131.899 - 132.721: That's your file manager.
+133.082 - 137.751: To see hidden files, just press Command plus Shift plus period all at once.
+137.798 - 141.302:  CoMD plus shift plus period, like a little keyboard shortcut.
+141.442 - 141.883: Exactly.
+142.043 - 143.645: Toggles them on and off.
+143.665 - 147.57: For Linux, it usually involves going into your file manager's settings menu.
+148.171 - 150.714: Look for an option like show hidden files.
+151.274 - 158.423: Then, for file extensions on a Mac, go to the Finder menu, click settings, or maybe preferences, depending on your Mac version.
+158.403 - 160.948:  Go to the Advanced tab, and there's a checkbox.
+161.169 - 162.792: Show all filename extensions.
+162.892 - 164.115: Make sure that's ticked.
+164.235 - 164.836: Check the box.
+164.856 - 165.478: Yep.
+165.498 - 169.726: And Linux users, again, it's usually a similar setting in your file manager's preferences.
+170.147 - 172.251: Just look for something about showing extensions.
+172.332 - 174.216: To check it worked, just look at some files.
+174.236 - 176.28: You see things like .py or MD now.
+176.42 - 176.661: Great.
+176.761 - 177.863: Now for the Windows folks.
+177.843 - 190.665:  Windows users, you'll want to open File Explorer, look up at the ribbon menu at the top, click the View tab, then in the section labeled Show Hide, you'll see two checkboxes, File Name Extensions and Hidden Items.
+190.765 - 191.566: Just check both of those.
+191.587 - 192.107: Check, check.
+192.568 - 192.889: Done.
+193.009 - 193.81: You're good to go.
+193.89 - 194.592: Fantastic.
+194.632 - 195.674: Step one complete.
+196.114 - 199.48: Now, step two, we mentioned this is optional.
+199.46 - 199.781:  Right.
+200.162 - 201.767: Very optional, especially if you're new.
+201.787 - 204.817: We really recommend just skipping this for now if you're starting out.
+204.917 - 205.339: Okay.
+205.359 - 207.004: We'll use direct installers in the next step.
+207.124 - 208.288: Much simpler.
+208.741 - 214.011:  Package managers are, well, they're powerful tools, but maybe a bit much right at the beginning.
+214.171 - 218.439: But just quickly for context, what is a package manager, if someone's curious?
+218.459 - 221.505: Think of it like a librarian for your software tools.
+221.565 - 227.136: It helps you find, install, update, and manage all the different software packages and libraries you need for your projects.
+227.376 - 229.5: Keeps track of dependencies, that sort of thing.
+229.582 - 231.485:  Like Legos and an organizer.
+231.745 - 231.986: Okay.
+232.206 - 233.248: Yeah, that's a good way to put it.
+233.408 - 238.636: So someone does want to check if they have one, say, on Linux, maybe Ubuntu or using WSL.
+238.996 - 239.197: Sure.
+239.617 - 248.151: On those Debian-based systems, you'd open your terminal and run sudo apt install apt, then sudo apt update, and finally apt version.
+248.511 - 251.416: If that last one gives you a version number, apt is likely there.
+251.696 - 253.699: And for Mac users, maybe they've heard of Homebrew.
+253.898 - 255.221:  Right, Homebrew is popular on Mac.
+255.742 - 259.891: Open the terminal, check if it's there with brew update and then brew version.
+260.231 - 262.677: If not, you can grab the install command from the Homebrew website.
+262.717 - 270.473: It changes sometimes, but right now it's binbash-ac curl-fssl-https.raw.
+270.672 - 276.118:  .gittobussercontent.com forward slash homebrewinstallhudoinstall.sh.
+276.979 - 279.762: Run that, then run brew update and brew version again, just to be sure.
+280.322 - 280.382: OK.
+280.402 - 281.684: And Windows, wing it.
+281.964 - 283.385: For Windows, you'd use PowerShell.
+283.726 - 284.667: Type wingitinfo.
+284.687 - 285.808: That should tell you if it's installed.
+285.848 - 290.633: If not, the easiest way is usually just to make sure you have the latest app installer from the Microsoft Store.
+290.673 - 290.873: All right.
+290.893 - 292.375: So that's a quick look at package managers.
+292.455 - 293.396: But again, main point.
+293.936 - 295.098: Beginners, feel free to skip this.
+295.118 - 295.498: Definitely.
+295.558 - 300.223: Let's move to step three, which is not optional, installing Python, Git, and Visual Studio Code.
+300.372 - 301.274:  the essential trio.
+301.675 - 302.175: Absolutely.
+302.596 - 307.486: These are your core tools for, well, pretty much any professional Python work, especially data analytics.
+307.666 - 308.728: You'll use these constantly.
+308.909 - 314.82: Okay, let's walk through the installs, using the official installers, the recommended route for most people, starting with Windows.
+314.885 - 318.972:  Windows users, head to python.org, download the latest Python installer.
+319.593 - 322.358: Now, during the install, pay really close attention.
+322.418 - 326.465: There's a check box, usually on the first screen, that says, add Python to path.
+327.066 - 328.428: Ah, the crucial check box.
+328.448 - 328.708: Yes.
+329.029 - 330.752: You absolutely need to check this box.
+331.092 - 333.156: It lets you run Python from your command line later.
+333.216 - 336.842: If you miss it, uh-oh, well, you can just rerun the installer and check it then.
+336.822 - 338.045:  Okay, good recovery option.
+338.065 - 342.135: Yeah, then download Git from git-scm.com.
+342.677 - 346.406: And finally, VS Code from code.visualstudio.com.
+346.426 - 349.574: Just run those installers, follow the prompts, pretty straightforward.
+349.674 - 349.975: Got it.
+350.075 - 353.464: Remember, add Python to Path on Windows, now for Mac users.
+353.528 - 359.336:  Mac users also start at python.org, download the python.pkg file, run it, follow the instructions.
+359.857 - 362.3: But here's an extra very important step for Mac.
+362.801 - 365.344: After the main install finishes, you need to install certificates.
+365.525 - 366.426: Certificates, okay.
+366.446 - 370.852: Yeah, open Finder, go to your Applications folder, find the Python folder that was just installed.
+371.373 - 374.417: Inside, there should be an icon like Install Certificates.
+374.938 - 376.019: Double-click that and run it.
+376.18 - 378.943: This helps Git work correctly with secure connections later.
+379.164 - 379.564: Good tip.
+380.045 - 381.527: What about Git itself on Mac?
+381.507 - 382.65:  Check if it's already there.
+383.172 - 384.836: Open Terminal, type git version.
+385.237 - 386.2: Often it's pre-installed.
+386.481 - 390.893: If not, or if it's old, grab the installer from git-scm.com.
+391.109 - 392.711:  Okay, and VS Code.
+392.931 - 401.28: Download from code.visualstudio.com, run the download, might need to extract it, then drag the VS Code app icon into your applications folder.
+401.841 - 406.046: The guide also suggests looking up how to launch VS Code from the command line on their site.
+406.066 - 406.546: That's handy.
+406.646 - 407.627: Right, saves a bit of clicking.
+407.687 - 410.01: Lots of Mac details there, especially the certificates.
+410.45 - 411.111: Now Linux.
+411.131 - 412.953: Linux is usually smoother via the terminal.
+413.013 - 417.218: Open your terminal first, run sudo apt update to refresh your package list.
+417.67 - 422.25:  Then run sudo apt install-y python3 pip git.
+422.772 - 424.66: That one command should grab Python 3.
+424.893 - 427.496:  PIP, the Python package installer, and Git.
+427.616 - 428.337: Nice and efficient.
+428.557 - 430.419: For VS Code on Linux, it's a bit different.
+430.739 - 440.669: You need to follow the instructions on the official VS Code website, code.visualstudio.com forward slash docsciplinix to add the Microsoft repository first.
+441.23 - 443.892: Then you can install it with sudo apt install code.
+443.913 - 444.173: Got it.
+444.653 - 446.735: Follow the dogs for VS Code on Linux.
+446.755 - 447.136: Okay.
+447.216 - 447.997: Tools installed.
+448.377 - 450.259: Step four is configuring Git.
+450.492 - 450.973:  That's right.
+451.413 - 453.537: Now that Git's installed, you need to tell it who you are.
+454.017 - 455.88: Set up your global username and email.
+456.261 - 458.704: This info gets stamped on every change you save.
+458.945 - 461.368: And it's best to use the same email as your GitHub account, right?
+461.569 - 462.09: Exactly.
+462.25 - 468.92: And ideally, use an email address that's permanent, not one that might expire, like a school or work email you might lose access to later.
+469.22 - 469.681: Good point.
+469.781 - 470.602: How do we set this up?
+470.622 - 472.425: OK, fire up VS Code first.
+472.786 - 475.69: Then go to the top menu, Terminal, New Terminal.
+475.822 - 477.003:  Okay, open the built-in terminal.
+477.043 - 483.451: Yes, and an important note here, Windows users, make sure you're using PowerShell or PowerShell Core, not the old command prompt.
+483.471 - 484.212: PowerShell, got it.
+484.392 - 489.278: Mac and Linux users, the default terminal that pops up, probably Josh or Bash is fine.
+489.298 - 490.5: Gary, terminal's open.
+490.7 - 491.581: What commands do we run?
+491.921 - 492.522: Two main ones.
+492.883 - 500.291: First, type git config globaluser.name, your name, obviously replacing your name with your actual name, and hit enter.
+500.512 - 500.732: Okay.
+500.999 - 508.022:  Then type getconfigglobaluser.email at example.com, replacing that with your actual email, and hit Enter.
+508.07 - 509.732:  Name and email configured globally.
+509.932 - 510.392: Exactly.
+510.893 - 514.216: Then, just to check, type git config list and press enter.
+514.476 - 516.018: Look through the output that appears.
+516.458 - 520.282: You should see lines for user.name and user.email showing what you just entered.
+520.723 - 523.666: If not, or if there's a typo, just run the config commands again.
+523.706 - 524.186: Perfect.
+524.427 - 525.247: Verify the config.
+525.748 - 528.911: Step five, making VS Code even better with extensions.
+528.951 - 529.131: Yep.
+529.692 - 532.234: Extensions are like superpowers for VS Code.
+532.315 - 535.798: Little add-ons that give you tons of extra functionality, especially for Python.
+535.778 - 537.199:  How do we find these superpowers?
+537.219 - 539.161: In VS Code, look at the sidebar on the left.
+539.261 - 540.963: There's an icon that looks like four squares.
+541.523 - 545.267: Click that, or use the menu, view extensions, or the shortcut.
+545.887 - 551.853: Shrial plus shift plus X on Windows, CMD plus shift plus X on Mac, that opens the extensions marketplace.
+551.873 - 552.874: Okay, marketplace open.
+553.134 - 554.735: What are the must-haves for Python?
+554.975 - 559.5: Number one, search for Python and install the one published by Microsoft.
+559.52 - 563.423: That's essential language support, error checking, linting, debugging.
+563.583 - 564.464: The core Python support.
+564.544 - 565.465: Exactly.
+565.445 - 568.15:  Next, install Jupyter, also by Microsoft.
+568.23 - 571.436: Let's you work with Jupyter notebooks right inside VS Code.
+571.456 - 572.919: Super common for data work.
+572.939 - 573.099: Right.
+573.319 - 574.201: Notebooks are huge.
+574.582 - 576.946: And third, get Pylance, again from Microsoft.
+576.966 - 581.494: It gives you really fast code suggestions and type checking, makes coding much smoother.
+581.835 - 585.642: Python, Jupyter, Pylance, the big three from Microsoft.
+586.223 - 587.385: Any other useful ones?
+587.872 - 589.414:  Yeah, a few others are really handy.
+589.675 - 595.764: If you use notebooks a lot, maybe Jupyter Keymap for shortcuts and Jupyter Notebook Renderers for better output display.
+596.065 - 596.165: Okay.
+596.385 - 598.809: For code formatting, Prettier is excellent.
+598.849 - 601.854: It handles Python, Markdown, lots of stuff, keeps code tidy.
+602.054 - 602.234: Nice.
+602.595 - 605.239: If you write documentation in Markdown, Markdown all-in-one is great.
+605.319 - 609.866: And if you deal with CSV files, Rainbow CSV is surprisingly helpful at colors of columns.
+610.046 - 611.368: Rainbow CSV, I like that.
+611.869 - 614.453: What about databases, like Squilite?
+614.433 - 615.254:  Good question.
+615.634 - 616.876: There are a couple of popular ones.
+617.436 - 620.42: Squite Viewer by Florian Klamper is a good lightweight option.
+620.74 - 624.023: Open .db files, view tables, run basic queries.
+624.444 - 624.965: Simple viewer.
+625.305 - 633.514: Or for more features like better query support, table management, maybe even some basic visualization, check out Squalet by Alex Vizi.
+633.734 - 634.014: Got it.
+634.235 - 635.876: So install the extensions we want.
+636.817 - 637.318: Then what?
+637.687 - 641.253:  Best practice is to restart VS Code after you install them.
+641.374 - 642.455: Just close and reopen it.
+642.475 - 644.078: That makes sure everything loads correctly.
+644.098 - 647.825: Then maybe pop open the extensions view again just to see them listed there.
+648.346 - 651.251: And, you know, extensions update all the time, so keep an eye out for that.
+651.832 - 654.236: VS Code might even suggest others based on your files.
+654.256 - 655.639: Worth checking those out sometimes.
+655.719 - 658.564: Okay, VS Code is now turbocharged.
+658.544 - 662.99:  Step six, getting organized, creating a dedicated folder for our code.
+663.15 - 664.633: Yes, super important.
+664.933 - 669.8: You need one specific place for all your coding projects, especially ones you'll manage with Git and GitHub.
+670.14 - 671.542: We recommend calling it repos.
+671.562 - 672.383: Repos, okay.
+673.064 - 673.946: And where should this live?
+674.266 - 681.396: The key thing is to put it outside any folders that automatically sync to the cloud, like OneDrive on Windows or iCloud on Mac Linux.
+681.612 - 682.614:  Ah, why is that?
+682.794 - 687.301: Development projects often create lots of temporary files or have large libraries.
+687.902 - 694.092: Syncing all that constantly can slow things down, use unnecessary bandwidth, and sometimes cause weird conflicts.
+694.492 - 697.377: Best to keep your main code folder separate from Cloud Sync.
+697.677 - 699.219:  Okay, avoid the sync folder.
+699.439 - 700.201: So where exactly?
+700.721 - 701.382: Windows users.
+701.622 - 709.313: On Windows, open File Explorer, go right to the root of your main drive, usually C, create a new folder there, call it repos, capital R. C repos, got it.
+709.534 - 710.835: Make sure OneDrive isn't grabbing it.
+710.996 - 711.356: Exactly.
+711.616 - 719.407: For Mac and Linux users, open Finder or your file manager, go to your home directory that's usually shown as, create the repos folder right there.
+719.447 - 721.39: So it's repos, again, capital R.
+721.37 - 721.791:  Repos.
+722.111 - 724.375: And Mac users should check iCloud settings too.
+724.415 - 725.337: Yeah, good idea.
+725.798 - 729.645: Go into System Settings, Apple ID, iCloud Drive Options.
+730.005 - 733.071: Look for Desktop and Documents folders and make sure that's not checked.
+733.111 - 735.836: Otherwise, your Repos folder might get synced if it's accidentally put there.
+736.216 - 737.258: Keep it directly in Home.
+737.559 - 739.742: Capital R, Repos, Outside Cloud Sync.
+739.983 - 740.203: Done.
+740.504 - 741.546: Step 7 is quick.
+741.566 - 742.127: GitHub Account.
+742.427 - 742.888: Yep.
+743.155 - 743.536:  GitHub.
+743.997 - 747.223: It's the place online where you store, share, and collaborate on code.
+747.504 - 748.886: Hugely important in the industry.
+749.207 - 751.872: Just go to github.com, sign up for a free account.
+752.093 - 753.295: It's pretty straightforward.
+753.656 - 755.139: Okay, GitHub account created.
+755.54 - 756.883: We have our repos folder.
+757.524 - 759.628: Final step for this part, step eight.
+759.76 - 762.685:  Opening VS Code in that folder and checking everything.
+762.785 - 763.045: Right.
+763.426 - 766.29: VS Code works best when it knows what folder you're working in.
+766.711 - 775.404: Lots of features depend on having a project folder open, so it's a really good habit to always open your specific project folder, or for now, just open our main Repos folder.
+775.685 - 776.205: How do we do that?
+776.506 - 778.028: Open VS Code in the folder?
+778.269 - 778.87: Two main ways.
+779.15 - 779.931: The graphical way.
+780.392 - 785.66: Find the Repos folder in File Explorer or Finder, right-click on it, and look for an Open with Code option.
+785.82 - 786.121: Okay.
+786.141 - 786.882: Right-click option.
+786.98 - 795.148:  Or if you set up the command line launcher earlier, open your regular terminal and type code repos on MacLinux or code C repos in Windows PowerShell.
+795.529 - 797.791: That should launch VS Code directly into that folder.
+797.911 - 798.372: Cool.
+798.392 - 800.734: So VS Code is open, looking at our repos folder.
+800.854 - 801.495: Now what?
+801.515 - 803.937: Now we open the integrated terminal inside VS Code.
+804.298 - 806.74: Go to the terminal menu at the top, select new terminal.
+806.84 - 807.801: It'll pop up at the bottom.
+808.022 - 809.583: The terminal within VS Code.
+809.603 - 810.004: Exactly.
+810.064 - 814.388: Again, it should be PowerShell on Windows, ZESH or Bash on MacLinux.
+814.368 - 820.275:  If you're on Windows and it has trouble opening, the guide mentions a setting, terminal.integrated.cwd.
+820.816 - 826.262: You might need to set that to C repos in VS Code settings, but usually just opening the folder first fixes it.
+826.502 - 829.426: Okay, terminal open inside VS Code in the repos folder.
+830.087 - 830.687: Final check time.
+830.727 - 832.389: Final check, let's verify the tools.
+832.87 - 839.578: In that integrated terminal, MacLinux users type Python 3 version, then pip 3 version, then git config list.
+839.598 - 840.679: Hit enter after each.
+840.819 - 843.042: Python 3, pip 3, git config.
+843.089 - 845.773:  Windows PowerShell users, it's slightly different for Python.
+846.053 - 848.517: Type pyversion, then pipversion, then getconfiglist.
+848.657 - 849.839: Again, enter after each.
+849.959 - 852.322: Py, pip, getconfig for Windows.
+852.783 - 853.384: What should we see?
+853.624 - 856.408: The Python and pip commands should spit out version numbers.
+856.588 - 862.196: If you get command not found or an error, something went wrong with the install or the path setup, needs fixing.
+862.537 - 867.544: The getconfiglist command should show your user.name and user.email that you set up earlier.
+867.693 - 870.196:  So version numbers and Git config details.
+870.436 - 870.836: Exactly.
+870.976 - 876.142: If any of those fail, you've got to go back and revisit the installation or configuration steps for that tool.
+876.462 - 879.485: They all need to be working before you move on to actual projects.
+879.966 - 880.226: All right.
+880.907 - 883.309: That wraps up part one of our deep dive.
+883.329 - 891.658: We've covered a lot of ground, getting the machine prepped, installing the core tools, configuring Git, setting up VS Code, organizing folders.
+892.246 - 902.198:  Yeah, it's a fair bit of setup, but honestly, getting this foundational stuff right, even the seemingly small things like file extensions, makes everything that comes next so much smoother.
+902.218 - 904.681: It's really critical for a professional workflow.
+904.741 - 905.122: Absolutely.
+905.282 - 906.443: It prevents so many headaches later.
+907.505 - 908.866: Saves a lot of time and frustration.
+909.147 - 915.334: So now that you've laid this solid groundwork, you've got Python, Git, VS Code all ready to go.
+915.972 - 917.357:  It kind of makes you think, doesn't it?
+917.838 - 920.748: What amazing things could you start building with this setup?
+920.929 - 922.073: That's the exciting part.
+922.193 - 922.956: Definitely.
+922.976 - 929.578: Join us next time for part two, where we'll actually initialize your very first Python project and start establishing that professional workflow we've been talking about.
+930.059 - 932.327: Until then, happy exploring.

@@ -1,0 +1,456 @@
+0.031 - 1.132:  Welcome back to the Deep Dive.
+1.192 - 4.356: Last time, we got your machine all set up, GitHub account ready.
+4.697 - 8.462: Yeah, and that setup is really crucial.
+8.522 - 11.586: If you haven't done those steps from part one, you might want to hit pause.
+11.986 - 15.851: Definitely, because what we're doing today really builds right on top of that foundation.
+15.871 - 17.273: You need that first part done.
+17.293 - 17.913: Exactly.
+17.974 - 24.722: So in this Deep Dive, we're taking that setup and actually kicking off a professional Python project.
+24.742 - 27.085: Moving from setup to actually starting something.
+27.183 - 27.524:  Right.
+27.784 - 34.038: Using the tools in a well structured professional way like you would in a team or for a serious project.
+34.058 - 34.378: OK.
+34.418 - 35.621: So what are these first steps.
+35.962 - 37.946: What's on the agenda for today's deep dive.
+38.226 - 43.217: Well today we're walking through those initial stages getting your projects home set up basically.
+43.298 - 44.2:  It's home on GitHub.
+44.34 - 44.52: Yep.
+45.001 - 51.955: First, we'll look at how you can start with an existing project on GitHub, maybe something open source you want to contribute to, or just a good template.
+52.055 - 53.779: Okay, using something that's already out there.
+54.059 - 59.991: Or the second option, starting a totally new project right from scratch directly on GitHub.
+60.207 - 61.329:  Right, a blank canvas.
+61.409 - 65.374: So either way, we're getting something set up on GitHub first.
+65.795 - 66.576: What comes after that?
+66.736 - 72.384: So once it exists on GitHub, the next really vital step is getting a copy onto your own computer.
+72.504 - 73.526: Bringing it down locally.
+73.706 - 74.127: Exactly.
+74.427 - 76.37: It's called cloning the repository.
+76.891 - 80.376: And Git, the system we're using, it remembers every single change.
+80.456 - 83.56: So when you clone, you get the files and the whole history.
+83.8 - 84.622: Ah, OK.
+85.323 - 87.886: Cloning gets the project and its history locally.
+88.467 - 89.809: What's next after cloning?
+89.907 - 97.737:  Then we add a couple of really standard fundamental files, the .gitignore file and the requirements.txt file.
+97.877 - 101.601: .gitignore and requirements.txt, they sound important.
+101.621 - 102.162: Oh, they are.
+102.202 - 107.268: They might seem simple, but they're huge for keeping things organized and making sure your project works for others too.
+107.509 - 108.31: Reproducibility.
+108.51 - 110.312: Organization and reproducibility, got it.
+110.412 - 110.953: What else?
+110.933 - 115.638:  After that, we'll touch on the basics of using Git itself, the add-commit-push cycle.
+115.859 - 116.619: Add-commit-push.
+116.7 - 116.98: Yeah.
+117.18 - 125.049: We'll specifically use it to get those first two files, the gitignore and requirements, up to your GitHub repository, linking your local work back to the remote.
+125.449 - 131.036: Okay, so making changes locally, like adding those files and then sending them back up to GitHub, makes sense.
+131.396 - 132.958: And the last piece for today.
+133.158 - 137.104:  The final piece is creating a local Python virtual environment.
+137.204 - 137.744: The Venvy.
+138.025 - 138.225: Right.
+138.666 - 139.707: This is super key.
+139.948 - 143.913: It isolates your project's dependencies, keeps everything separate.
+144.113 - 144.674: Separate from what?
+144.995 - 145.575: Other projects?
+145.595 - 149.741: Yeah, separate from other Python projects you might have and separate from your main system Python.
+150.663 - 156.01: So imagine you need, say, version one of a library for project A, but version two for project B.
+156.547 - 159.851:  Without virtual environments, installing one would break the other.
+160.031 - 160.472: Exactly.
+160.592 - 161.713: Total headache potential.
+162.134 - 163.796: Virtual environments avoid that mess.
+164.176 - 166.219: Keeps each project self-contained.
+166.619 - 168.041: Okay, that sounds essential.
+168.181 - 169.924: Definitely something we want to avoid messing up.
+170.004 - 174.149: So, just like last time, we'll take this step-by-step, aiming for those aha moments.
+175.01 - 175.711: No overwhelm.
+175.791 - 176.732: That's the plan.
+176.999 - 177.82:  All right, let's dive in.
+178.181 - 180.806: Option one, starting with an existing project.
+181.387 - 185.274: Say you find something cool on GitHub, an open source tool, or maybe a project template.
+186.276 - 187.257: What's the first move?
+187.277 - 192.266: Okay, so generally, two main ways to get a copy under your control.
+192.968 - 194.17: First is the fork button.
+194.31 - 195.953: Fork, like a fork in the road.
+196.507 - 197.248:  Sort of.
+197.468 - 201.334: You'll see it usually in the upper right corner on the GitHub repository page.
+201.995 - 207.143: Clicking fork makes a complete copy of that whole project, but inside your GitHub account.
+207.203 - 208.264: It's your personal version.
+208.805 - 211.088: Okay, so fork gives me my own copy on GitHub.
+211.689 - 212.29: What's the other way?
+212.611 - 214.654: The other way is using it as a template.
+214.774 - 220.362: If the owner set it up that way, you'll see a green button, use this template, also usually near the top right.
+220.482 - 221.283: Use this template.
+221.464 - 223.847: Click that, then choose create a new repository.
+224.367 - 229.636:  This makes a brand new repository in your account, but it starts with all the files and structure from that template.
+229.796 - 236.727: So forking sounds like maybe I want to contribute back eventually, while the template is more like, I want this structure for my own new thing.
+237.028 - 239.191: Yeah, that's a really good way to think about the difference.
+239.372 - 239.852: Spot on.
+240.013 - 240.233: OK.
+240.573 - 243.979: So whether I fork or use a template, I need to name my new repository, right?
+244.027 - 245.171:  Yes, absolutely.
+245.372 - 248.603: And the name, it seems small, but it matters.
+248.824 - 249.687: Keep it organized.
+250.59 - 255.487: The standard practice for Python projects is all lowercase letters.
+255.688 - 256.551: Lowercase only.
+256.649 - 260.615:  use dashes, hyphens between words, not underscores, usually dashes.
+260.675 - 261.896: Okay, dashes between words.
+261.916 - 263.759: And definitely, absolutely no spaces.
+263.779 - 264.68: No spaces, got it.
+265.041 - 265.822: Can you give an example?
+265.922 - 274.474: Sure, so instead of like my cool project, you'd name it my cool project, or maybe data analysis scripts, Flask web app, that kind of thing.
+274.795 - 279.461: Simple, clean, consistent, makes sense, prevents weird issues later maybe.
+279.602 - 280.102: Exactly.
+280.543 - 284.128: Some tools and systems just work better with simple dash-separated names.
+284.529 - 286.251: What about making it public or private?
+286.417 - 287.058:  Good question.
+287.338 - 288.159: What's the advice there?
+288.42 - 291.944: Especially when you're just starting, learning the ropes, making it public is usually fine.
+291.964 - 295.349: You can even use a temporary name if you're shy about the project idea itself.
+296.049 - 298.412: The goal here is just getting comfortable with the process.
+298.573 - 301.076: Okay, public is fine for now, then just follow the prompts.
+301.436 - 309.327: Yep, choose the name, visibility, maybe add a description if you want, and click the button to finish creating your fork or your new repo from the template.
+309.507 - 310.788: GitHub will guide you through.
+310.828 - 313.572: All right, that's starting with something existing.
+313.94 - 315.582:  Now, what about the other path?
+316.384 - 321.852: Starting with a completely blank canvas, a totally new Python project right on GitHub.
+322.072 - 322.252: Right.
+322.352 - 324.636: Starting fresh, also pretty straightforward.
+325.116 - 327.62: First step, obviously, log into your GitHub account.
+327.66 - 328.081: Logged in.
+328.682 - 329.022: Then what?
+329.343 - 331.366: Look for the plus sign, the plus icon.
+331.426 - 333.309: It's usually in the top right corner of the page.
+333.329 - 333.629: Found it.
+333.829 - 335.652: Click that, and you get a dropdown menu.
+335.932 - 338.116: Choose New Repository from that list.
+338.196 - 338.456: OK.
+338.576 - 339.357: New Repository.
+339.438 - 339.778: Click.
+339.877 - 342.481:  That takes you to the setup page for your new repo.
+343.021 - 345.665: And just like before, first thing is the name.
+345.965 - 346.927: And the same rules apply.
+347.347 - 349.59: Lowercase, dashes, no spaces.
+349.77 - 350.992: Exactly the same rules.
+351.272 - 352.174: Keep it consistent.
+352.354 - 355.698: Think my awesome tool, learning Python project, website backend.
+356.299 - 357.08: Stick to that pattern.
+357.301 - 358.162: Consistency, good.
+358.462 - 359.343: What else is on this page?
+359.644 - 360.865: You can add a short description.
+361.226 - 363.008: Optional, but, you know, good practice.
+363.349 - 365.271: Helps remind you what it's for, tells others.
+365.592 - 366.052: Good idea.
+366.273 - 368.736: Add a description, then visibility.
+368.767 - 369.888:  Yep, choose public again.
+370.329 - 373.393: Like we said, for learning and practice, public is generally easiest.
+374.034 - 375.616: Use a temporary name if needed.
+376.777 - 377.298: Okay, public.
+377.659 - 386.41: Now, it feels like creating a totally empty project might miss something important compared to forking or using a template.
+386.81 - 387.992: Is there a crucial step here?
+388.072 - 389.674: Yes, you absolutely nailed it.
+389.734 - 392.037: This is super important and easy to miss.
+392.057 - 394.801: You must check the box that says add a readme file.
+394.881 - 395.882: Add a readme file.
+395.922 - 397.204: Why is that so critical?
+397.505 - 400.95:  Well, a readme is good practice anyway, it's where you describe your project.
+401.03 - 408.4: But technically for Git, when you clone a repository for the very first time, it often expects something to be there already, at least one file.
+409.121 - 411.744: So if it's completely empty, cloning might not work smoothly.
+411.945 - 413.106: It can cause issues, yeah.
+413.607 - 419.254: The simplest way to avoid any weirdness is just to make sure GitHub adds that initial readme file for you right at the start.
+419.415 - 420.456: Okay, lesson learned.
+420.897 - 424.882: Always check the add a readme file box when creating a new repo from scratch.
+425.383 - 426.364: What if someone forgets?
+426.513 - 435.612:  Honestly, if you forget the readme when creating it, the cleanest, easiest fix is usually just to delete that empty repository on GitHub and start over.
+435.732 - 437.415: Make sure you check the box the second time.
+437.716 - 437.976: Ouch.
+438.177 - 438.818: OK, noted.
+439.039 - 439.7: Check the box.
+440.101 - 444.43: So name, description, public, check, readem.
+445.151 - 445.652: Then what?
+445.7 - 454.516:  Then you just hit the big green Create Repository button, and boom, you've got your new project repository live on GitHub, starting with just that one readm.md file.
+454.537 - 454.817: Perfect.
+454.857 - 458.624: So now we have our project on GitHub, either copied or brand new with the readm.
+458.965 - 462.291: What's the very next thing to get it onto our own computer so we can actually work on it?
+462.338 - 462.678:  Right.
+462.778 - 467.102: The next step, and it's the same whichever way you started, is to clone it.
+467.623 - 470.906: Download that repository from GitHub to your local machine.
+471.026 - 471.406: Cloning.
+471.627 - 472.327: Bringing it local.
+472.347 - 472.748: Yep.
+472.768 - 474.029: It's basically a two-part process.
+474.049 - 474.669: Okay, part one.
+474.709 - 478.653: Part one, copy the web address, the URL of your repository on GitHub.
+478.673 - 480.575: Just go to your repository's page in your web browser.
+480.875 - 482.056: Look right up in the address bar.
+482.076 - 483.137: The URL at the top.
+483.357 - 483.718: Exactly.
+483.838 - 488.202: It'll start with htps.github.com, then your username, then your repository name.
+488.542 - 491.805: Like github.com, your name, your repo name.
+491.785 - 494.384:  make super sure it's the URL for your repo.
+494.586 - 494.948: Got it.
+495.593 - 497.205: Found my URL, what do I do with it?
+497.287 - 499.27:  to copy it, select the whole thing in the address bar.
+500.051 - 507.882: CTRL plus A usually selects all, then CTRL plus C to copy on Windows, or CMD plus A, CMD plus C on the clinics.
+507.962 - 513.911: Okay, CTRL plus A, CTRL plus C, URL is copied to my clipboard, task one done, what's part two?
+514.091 - 516.835: Part two is using the git clone command in your terminal.
+516.995 - 518.357: The terminal again, which one?
+518.437 - 523.484: Right, on Windows, use PowerShell, not the old command prompt or CMD, use PowerShell.
+523.524 - 525.387: PowerShell on Windows, cool clinics.
+525.535 - 528.037:  On Mac or Linux, the standard terminal app is fine.
+528.058 - 530.16: It's probably running ZS or Bash by default.
+530.3 - 530.58: OK.
+530.74 - 531.721: Got the right terminal open.
+531.801 - 532.902: Where do I need to be in the terminal?
+533.042 - 533.543: Which folder?
+533.783 - 534.284: Good question.
+534.444 - 536.826: You need to navigate to wherever you keep your code projects.
+536.866 - 541.611: Maybe you made a C repos folder on Windows or repos in your home directory on Mac Linux.
+541.631 - 542.432: My main code folder.
+542.612 - 543.012: Exactly.
+543.513 - 546.176: Use the CD command change directory to get into that folder.
+546.276 - 548.958: So like CDC repos or CD repos.
+549.239 - 549.459: OK.
+549.919 - 550.52: Use CD.
+550.72 - 552.982: I'm in my main repos folder in the terminal.
+553.263 - 553.703: Now what?
+553.902 - 559.458:  Now you type git clone space and then paste the URL you copied.
+559.799 - 563.229: CTRL L plus V on Windows, CMD plus V on MacLinux.
+563.489 - 566.037: OK, git clone space pasted URL.
+566.699 - 568.283: Then just hit enter or return.
+568.33 - 568.891:  And that's it.
+568.931 - 569.994: It just downloads it.
+570.014 - 570.435: Pretty much.
+570.775 - 578.533: Git connects to GitHub, downloads all the files, including that ReaDM if you started fresh, and the whole project history, and puts it into a new folder right there.
+578.593 - 580.938: The folder will have the same name as your repository.
+581.099 - 581.5: Slick.
+581.52 - 583.805: And I have to use my URL, right?
+583.825 - 584.807: Not some example.
+584.827 - 586.17: Oh, absolutely critical.
+586.15 - 592.276:  Any example like git clone https.github.com for a listing of your account or your repo is just showing the format.
+592.736 - 596.079: You must replace your account and your repo with your actual details.
+596.219 - 597.981: Otherwise, Git has no idea what to clone.
+598.141 - 599.102: Use my own URL.
+599.342 - 600.103: Got it loud and clear.
+600.944 - 601.624: Okay, success.
+601.985 - 603.346: The project is cloned locally.
+603.406 - 607.41: Now, you mentioned those two files, .gitignore and requirements.txt.
+607.97 - 608.691: Where do they fit in?
+608.931 - 609.071: Right.
+609.091 - 612.334: These are usually the very next things you add, especially if you started a brand new project.
+612.395 - 615.077: If you clone something existing, check first, they might already be there.
+615.108 - 615.629:  Good point.
+615.829 - 616.41: Check first.
+616.791 - 619.234: Assuming they aren't there, what's the best way to add them?
+619.575 - 622.539: Open your newly cloned project folder in VS Code.
+622.94 - 625.624: That just makes creating and editing files way easier.
+625.784 - 627.547: Okay, project opened in VS Code.
+627.788 - 629.831: Let's start with .gitignore.
+630.131 - 631.794: What is it, and how do I make it?
+631.814 - 636.281: Okay, .gitignore, pronounced dot git ignore, it's a plain text file.
+636.781 - 641.689: Its job is to tell Git which files or folders in your project it should, well,
+641.669 - 642.29:  Ignore.
+642.49 - 645.174: Ignore, meaning don't track them, don't send them to GitHub.
+645.194 - 645.655: Exactly.
+645.735 - 647.638: Things that don't belong in version control.
+647.838 - 654.788: To create it, just make a new file right in the main project folder, the root folder, and name it exactly, .gitignore.
+654.828 - 656.931: With the dot at the beginning, .gitignore.
+657.211 - 658.673: Yes, the dot is crucial.
+658.894 - 663.24: On a Clinix, that often makes it a hidden file, but for Git, the whole name .gitignore is what matters.
+663.44 - 666.244: Spelling, capitalization, the dot has to be perfect.
+666.364 - 668.267: If I ignore files, what kind of things go in there?
+668.365 - 687.905:  Common things are files specific to your local setup, like maybe editor settings, definitely your Python virtual environment holder, usually .vennv, and crucially, any files with secrets, API keys, passwords, database connection strings, stuff that should never end up on public GitHub.
+687.925 - 691.849: Okay, keeps secrets safe and avoids clutter from temporary or local-only files.
+692.389 - 692.89: Makes sense.
+693.531 - 695.993: How do I know what specific things to list in this file?
+696.125 - 697.588:  Good news is you don't have to guess.
+698.109 - 703.421: A great starting point is the example.jitignore file in our ProAnalytics 01 repository we mentioned.
+703.781 - 704.844: Ah, the example repo.
+704.864 - 711.197: Yeah, just find that file on GitHub, copy its entire contents, and paste it into your new empty.jitignore file in VS Code.
+711.177 - 712.62:  Okay, copy-paste from the example.
+712.64 - 714.002: What's typically in that example?
+714.103 - 730.093: It covers most common Python things, like DSTORE files from Mac OS, maybe a .vscode folder for VS Code settings, .env files for environment variables, the .vinenv folder itself, Python cache folders like PyCache, compiled Python files, .pics, .pio, Jupyter Notebook checkpoints.
+730.754 - 731.756: It's a really solid start.
+731.796 - 734.181: You might tweak it later, but it's a safe bet initially.
+734.296 - 736.681:  Great, copy the example.jitignore content.
+737.243 - 737.423: Done.
+737.884 - 740.27: What about the other file, requirements.txt?
+740.65 - 741.613: What's its job?
+741.633 - 744.86: Requirements.txt, pronounce requirements.txt.
+745.261 - 752.457: This file lists all the external Python packages your project needs to run, all the libraries you install that aren't built into Python itself.
+752.673 - 755.216:  So that's like the project's shopping list for libraries.
+755.416 - 755.997: Exactly.
+756.137 - 756.998: Perfect analogy.
+757.058 - 762.784: It tells anyone else, or future you, exactly what needs to be installed to make the project work.
+762.804 - 764.286: Essential for reproducibility.
+764.486 - 765.427: How do I create this one?
+765.567 - 765.927: Same way?
+766.108 - 766.688: Yep.
+766.708 - 771.534: New plain text file, right in the root project folder, named exactly requirements.txt.
+772.054 - 774.256: Again, spelling and capitalization are critical.
+774.677 - 776.679: Standard tools look for exactly this name.
+776.859 - 778.121: Requirements.txt.
+778.641 - 778.902: Got it.
+779.062 - 780.283: And what goes inside this one?
+780.382 - 788.229:  Similar to before, the ProAnalytics-01 repo has an example requirements.txt you can look at or copy from as a starting point.
+788.409 - 789.23: Use the example again.
+789.27 - 789.51: OK.
+789.71 - 790.811: What does it typically contain?
+791.192 - 794.455: Initially, it might just list some core packaging tools like pip itself.
+795.035 - 808.347: But the main idea is as you start using libraries like, say, pandas for data analysis or requests for web stuff or flask for a web app, you add the name of that package to this file, usually one name per line.
+808.833 - 812.058:  So as I pip install things later, I should also add them to this file.
+812.078 - 812.599: Precisely.
+812.619 - 816.404: That way, the file always reflects your project's actual dependencies.
+816.885 - 823.615: You can also list specific versions if needed, like pandas 1.5.3, but just the name is often enough to start.
+824.016 - 824.256: OK.
+824.597 - 827.801: Both files created using the examples as a base.
+827.821 - 828.883: You mentioned reading through them.
+828.931 - 831.634:  Yeah, I really recommend taking a minute just to scan the contents.
+831.734 - 838.362: It helps you understand why .gitignore is ignoring certain things and what kinds of dependencies requirements.txt is tracking.
+838.802 - 840.084: It demystifies them a bit.
+840.264 - 844.008: Experience really comes from using them, seeing how they change as your project grows.
+844.108 - 844.468: Makes sense.
+844.729 - 845.49: Get familiar with them.
+846.21 - 849.854: OK, we've created .gitignore and requirements.txt locally.
+850.575 - 855.681: Now, how do we get these new files saved into our project history and up onto GitHub, the add commit push thing?
+855.914 - 856.715:  Exactly.
+856.835 - 858.818: Time for the core Git workflow.
+859.458 - 863.423: First, make sure you save those two new files in VSCode.
+863.623 - 863.924: Saved.
+864.424 - 866.287: Now open the terminal inside VSCode.
+866.307 - 869.13: You can usually go to the terminal menu and select new terminal.
+869.19 - 869.471: Okay.
+869.611 - 872.815: Terminal open inside VSCode and it's sitting in my project directory.
+872.835 - 873.736: What's the first command?
+873.896 - 875.918: First command is git add add.
+875.958 - 878.181: That's git space add space dot.
+878.502 - 879.343: Git add add.
+879.443 - 880.504: What does the dot do?
+880.619 - 885.167:  The dot is shorthand for add all changes in the current directory and any subdirectories.
+885.388 - 890.998: So it tells Git, look for any new files or any changes to existing files and get them ready to be saved.
+891.098 - 891.879: It stages them.
+892.16 - 895.906: In this case, it finds your new .jitignore and requirements .txt.
+896.167 - 898.792: Okay, Git add stages the changes, step one.
+898.952 - 899.573: What's step two?
+899.603 - 907.576:  Step two is git commit dot m, that's git space commit space ev space, and then your message in double quotes.
+907.717 - 909.359: Commit, like committing to the change.
+909.5 - 910.021: Exactly.
+910.281 - 915.51: It takes everything you staged with git add and saves a snapshot of it into your project's local history.
+915.79 - 917.393: The em stands for message.
+917.558 - 920.583:  you have to provide a message explaining what this snapshot contains.
+920.683 - 921.404: What kind of message?
+921.965 - 922.806: Short, descriptive.
+923.447 - 933.823: For this change, something like add.gitignoreandrequirements.txt files is perfect, clear, concise, tells anyone looking at the history exactly what happened in this commit.
+934.164 - 935.265: Make sure it's in double quotes.
+935.706 - 941.936: OK, git commit-mm add.gitignoreandrequirements.txt files saved locally.
+942.737 - 944.68: Step three, pushing to GitHub.
+944.828 - 945.852:  Step three is pushing.
+946.214 - 948.423: The command is git push u origin main.
+949.065 - 950.29: Git push u origin main.
+950.311 - 951.074: Let's break that down.
+951.455 - 954.568: Git push means send my committed changes somewhere else.
+955.072 - 961.204:  Origin is the standard nickname Git gives to the remote repository you cloned from, basically your repo on GitHub.
+961.745 - 965.512: Middomain is the default branch name where your main line of development lives.
+966.233 - 971.182: The icky part sets up a tracking link between your local main branch and the origin main branch on GitHub.
+971.202 - 975.831: You usually only need to include each origin main the very first time you push from a new clone.
+975.878 - 977.28:  Ah, only the first time.
+977.64 - 978.662: What about later pushes?
+978.802 - 983.428: For subsequent pushes, after you've done more work, add, commit, you can typically just use git push.
+983.748 - 984.89: Git will remember where to send it.
+985.27 - 985.55: Got it.
+986.031 - 993.881: So the full sequence for this first time is git add sally m add, then git commit m my message, then git push u origin main.
+994.242 - 994.702: You got it.
+995.063 - 1003.033: And doing this regularly after you make logical chunks of changes is how you build experience and keep your project history clean and your local work synced with GitHub.
+1003.182 - 1003.643:  Excellent.
+1003.803 - 1006.047: Files added, committed, and pushed.
+1006.548 - 1008.09: Okay, last topic for this deep dive.
+1008.772 - 1011.116: Creating that local Python virtual environment.
+1011.156 - 1012.077: Remind us why again.
+1012.378 - 1012.538: Right.
+1012.578 - 1015.623: The virtual environment, or Venve, it's all about isolation.
+1015.984 - 1019.971: Creating a separate, dedicated Python space just for this one project.
+1020.251 - 1022.575: Isolation from the main Python on my computer.
+1022.858 - 1023.739:  and other projects.
+1023.759 - 1024.219: Exactly.
+1024.42 - 1028.364: Any libraries you install for this project go into its own little bubble, its own Venn.
+1028.564 - 1034.39: They don't interfere with your system Python or libraries needed by other projects, prevents version conflicts, keeps things tidy.
+1034.43 - 1036.272: It's a must-do for professional work.
+1036.292 - 1037.514: Avoids dependency hell.
+1037.654 - 1038.034: Got it.
+1038.735 - 1040.196: How do we create this magic bubble?
+1040.317 - 1042.539: It's usually a one-time setup at the start of a project.
+1042.619 - 1046.223: If it ever gets messed up, you can just delete the Venn folder and recreate it.
+1046.243 - 1046.343: Okay.
+1046.984 - 1048.225: Back to the terminal and VS Code.
+1048.373 - 1049.274:  Yep.
+1049.294 - 1052.419: Make sure you're in your main project directory in the VS Code terminal.
+1052.459 - 1052.799: I'm there.
+1053.38 - 1054.001: What's the command?
+1054.121 - 1055.503: It depends slightly on your OS.
+1056.164 - 1061.452: If you're on Windows, in PowerShell, the command is pymvenv.vnv.
+1061.793 - 1065.318: Pymvenv.vnv on Windows.
+1065.558 - 1072.048: If you're on Mac or Linux, using Bash or Zeflash, it's python3-meet.vnv.vnv.
+1072.428 - 1076.274: Python3-meet.vnv.vnv on Mac Linux.
+1076.294 - 1077.756: What's the .vnv part at the end?
+1077.972 - 1081.22:  That's simply the name we're giving the folder that will contain the virtual environment.
+1081.24 - 1084.067: .vnv is the widely accepted standard name.
+1084.448 - 1088.258: The leading dot helps hide it in some file explorers, keeping your project view cleaner.
+1088.799 - 1090.824: Okay, so run the command appropriate for my system.
+1090.844 - 1091.526: What happens then?
+1091.607 - 1095.433:  You'll see a new folder named .vnv appear in your project directory.
+1095.693 - 1099.259: It contains a copy of the Python interpreter and directories for installing packages.
+1099.459 - 1100.461: And is that it?
+1100.481 - 1101.783: Or is there one more step?
+1101.803 - 1104.227: One potentially helpful interaction with VSCode.
+1104.487 - 1111.418: Often, right after you create the .vnv, VSCode will pop up a little notification asking if you want to select this new environment for the workspace.
+1111.619 - 1112.4: Ah, OK.
+1112.38 - 1114.605:  Yes, definitely click yes if you see that prompt.
+1115.106 - 1121.64: That tells VS Code, hey, when I run Python code in this project, use the Python interpreter and libraries inside this .vnv folder.
+1121.741 - 1122.943: It activates the isolation.
+1123.244 - 1123.825: Perfect.
+1123.845 - 1125.108: VS Code helps connect things up.
+1125.709 - 1129.037: Now, you mentioned something about using older Python versions.
+1129.197 - 1130.119: Is that common?
+1130.251 - 1133.135:  Not super common, especially for new projects.
+1133.215 - 1134.737: It's more of an advanced case.
+1135.178 - 1146.153: You'd only do it if your project specifically requires an older Python version, maybe because it integrates with some older system or a library that hasn't been updated, like maybe older Apache Spark or something.
+1146.173 - 1149.137: So probably don't worry about it unless I hit a very specific need.
+1149.117 - 1149.618:  Exactly.
+1149.658 - 1152.281: You'd need that specific older Python version installed first.
+1152.622 - 1161.954: Then you'd use a slightly different command to create the venv, like py-v.9-narratiri-env.venv on Windows, or use tools like PyM on Maclinx.
+1161.974 - 1170.625: But honestly, for 99% of cases starting out, just use the standard py-mvnv.vnv or python3-mbunv.vnv.
+1170.765 - 1171.366: Keep it simple.
+1171.586 - 1172.387: Stick to the standard.
+1172.608 - 1172.748: Got it.
+1172.768 - 1173.128: Definitely.
+1173.389 - 1174.45: Master the basics first.
+1174.7 - 1175.341:  Fantastic.
+1175.821 - 1177.583: Okay, let's do a quick recap of this session.
+1177.784 - 1178.825: We covered a lot.
+1178.845 - 1186.995: We started by getting a project onto GitHub, either by forking an existing one or creating a brand new one, making sure to add that readme.
+1187.015 - 1187.656: Crucial step.
+1187.836 - 1191.36: Then we clone that repository down to our local machine using git clone.
+1191.6 - 1192.622: Bringing the code home.
+1192.782 - 1198.829: We added the essential.gitignore and requirements.txt files, using examples as a starting point.
+1199.27 - 1201.332: Setting up the project structure properly.
+1201.565 - 1208.938:  We used the git add, git commit-message, and git push air origin main sequence to get those initial files tracked and uploaded to GitHub.
+1208.958 - 1210.481: A core Git workflow in action.
+1210.821 - 1223.083: And finally, we created our isolated local Python virtual environment using python3-mito-nnv.vinnv, or py-mvinnv.vinnv, and told VSCode to use it.
+1223.266 - 1227.752:  Creating that clean sandbox for our project, we've really built a solid foundation now.
+1227.912 - 1228.673: It feels like it.
+1228.734 - 1233.34: These steps, they seem like setup, but you're saying they're fundamental for doing Python development professionally.
+1233.36 - 1234.081: Absolutely.
+1234.281 - 1238.667: This isn't just busy work, it's how maintainable collaborative projects are built.
+1239.348 - 1242.913: And in our next deep dive, part three, we'll build right on this.
+1243.474 - 1251.585: We'll activate that virtual environment, install the packages from requirements.txt, and take the next steps in actually running and developing code.
+1252.156 - 1252.597:  Awesome.
+1252.717 - 1254.138: Looking forward to getting into the code.
+1254.158 - 1261.067: It really feels like we've bridged the gap from just having the tools installed to having a proper project structure ready to go.
+1261.207 - 1261.848: You really have.
+1262.389 - 1268.296: And maybe, as a final thought to chew on before next time, consider why these things get for version control.
+1268.777 - 1273.202: Virtual environments for isolation are so universal in software development.
+1273.182 - 1278.682:  What specific problems, what chaos are they preventing, especially as projects get bigger or involve more people?
+1278.722 - 1281.854: Thinking about the why really cements their importance.
+1281.874 - 1282.536: That's a great point.
+1282.636 - 1284.624: What problems are we solving before they even start?
+1284.905 - 1285.989: Definitely something to ponder.
+1286.069 - 1287.233: Thanks for walking us through all that.
+1287.414 - 1287.956: My pleasure.
+1288.016 - 1288.879: See you next time.

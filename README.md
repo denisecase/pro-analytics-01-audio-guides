@@ -11,7 +11,7 @@ For more information about how they were generated see [AUDIO.md](AUDIO.md).
 ---
 
 🟢 **Machine Setup (1 of 3)**
-- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_1.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
+- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_1.mp3) ◆ [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/) ◆ [View Transcript (new tab)](transcripts/audio_guide_1.txt)
 
 <audio controls>
   <source src="https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_1.mp3" type="audio/mpeg">
@@ -19,10 +19,11 @@ For more information about how they were generated see [AUDIO.md](AUDIO.md).
 </audio>
 
 
+
 ---
 
 🟠 **Project Initialization (2 of 3)**
-- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_2.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
+- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_2.mp3) ◆ [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/) ◆ [View Transcript (new tab)](transcripts/audio_guide_2.txt)
 
 <audio controls>
   <source src="https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_2.mp3" type="audio/mpeg">
@@ -33,7 +34,7 @@ For more information about how they were generated see [AUDIO.md](AUDIO.md).
 ---
 
 🔵 **Repeatable Workflow (3 of 3)**
-- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_3.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
+- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_3.mp3) ◆ [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/) ◆ [View Transcript (new tab)](transcripts/audio_guide_3.txt)
 
 <audio controls>
   <source src="https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_3.mp3" type="audio/mpeg">
