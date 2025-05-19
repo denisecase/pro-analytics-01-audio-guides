@@ -41,4 +41,4 @@ For more information about how they were generated see [AUDIO.md](AUDIO.md).
 </audio>
 
 ---
-**IMPORTANT**: Read the discussion - and follow the steps and commands - provided in the main repo: [pro-analytics-01](https://github.com/denisecase/pro-analytics-01).
+**IMPORTANT**: You will need to <mark>read the discussion and follow the steps and commands provided in the main repo: [pro-analytics-01](https://github.com/denisecase/pro-analytics-01)</mark>.
