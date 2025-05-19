@@ -3,12 +3,13 @@
 These **AI-generated two-person podcasts** are designed to complement the written steps in [pro-analytics-01](https://github.com/denisecase/pro-analytics-01). 
 
 Audio is **supplementary only** and not a replacement for the written instructions. 
-The guides are not necessarily recommended. 
+The guides are **not necessarily recommended**. 
 They may be distracting, and the speakers mispronounce key files and commands.
 They are mostly interesting from a state-of-the-art perspective.
 For more information about how they were generated see [AUDIO.md](AUDIO.md).
 
 ---
+
 🟢 **Machine Setup (1 of 3)**
 - [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_1.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
 
@@ -40,4 +41,4 @@ For more information about how they were generated see [AUDIO.md](AUDIO.md).
 </audio>
 
 ---
-**IMPORTANT**: You will need to read the discussion and follow the steps and commands provided in the main repo: [pro-analytics-01](https://github.com/denisecase/pro-analytics-01).
+**IMPORTANT**: Read the discussion - and follow the steps and commands - provided in the main repo: [pro-analytics-01](https://github.com/denisecase/pro-analytics-01).
