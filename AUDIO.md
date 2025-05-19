@@ -1,43 +1,25 @@
-# pro-analytics-01 (audio guides)
+# Audio File (Podcast Format) 
 
-These **AI-generated two-person podcasts** are designed to complement the written steps in [pro-analytics-01](https://github.com/denisecase/pro-analytics-01). 
+The setup instructions are available in audio (podcast) format for those who prefer listening and learning.
 
-Audio is **supplementary only** and not a replacement for the written instructions. 
-The guides are not necessarily recommended. 
-They may be distracting, and the speakers mispronounce key files and commands.
-They are mostly interesting from a state-of-the-art perspective.
-For more information about how they were generated see [AUDIO.md](AUDIO.md).
+## Built with NotebookLM
 
----
-🟢 **Machine Setup (1 of 3)**
-- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_1.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
+Audio Guides were created for free using [Google NotebookLM](https://notebooklm.google.com/).
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_1.mp3" type="audio/mpeg">
-  Your browser does not support the audio element. Try clicking "Listen in Browser" above.
-</audio>
+## Converted from WAV to MP3
 
+Google NotebookLM generates the audio as a `.wav` file.  
+To optimize for size and compatibility, it was converted to `.mp3` using the free [Online Audio Converter](https://online-audio-converter.com/).
 
----
+## How to Use  
 
-🟠 **Project Initialization (2 of 3)**
-- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_2.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
+Follow the **written** instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01).  
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_2.mp3" type="audio/mpeg">
-  Your browser does not support the audio element. Try clicking "Listen in Browser" above.
-</audio>
+- The **Audio Guides** may provide some additional context and explanations.  
+- The **Written Instructions** contain precise commands and setup details.  
 
+If you encounter issues during setup, revisit the **written instructions**.
 
----
+## OPTIONAL: Share Feedback
 
-🔵 **Repeatable Workflow (3 of 3)**
-- [Download](https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_3.mp3) or [Listen in Browser](https://denisecase.github.io/pro-analytics-01-audio-guides/)
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/denisecase/pro-analytics-01-audio-guides/main/audio_guide_3.mp3" type="audio/mpeg">
-  Your browser does not support the audio element. Try clicking "Listen in Browser" above.
-</audio>
-
----
-**IMPORTANT**: You will need to read the discussion and follow the steps and commands provided in the main repo: [pro-analytics-01](https://github.com/denisecase/pro-analytics-01).
+Feel free to ask questions in the pro-analytics-01 [GitHub Discussions](https://github.com/denisecase/pro-analytics-01/discussions) or raise a [GitHub Issue](https://github.com/denisecase/pro-analytics-01/issues) if you have suggestions or need additional clarification. 
