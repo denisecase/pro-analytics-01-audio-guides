@@ -1,6 +1,6 @@
 # pro-analytics-01 (audio guides)
 
-These **AI-generated two-person podcasts** are designed to complement the written steps in [pro-analytics-01](https://github.com/denisecase/pro-analytics-01) descrining professional Python.
+These **AI-generated two-person podcasts** are designed to complement the written steps in [pro-analytics-01](https://github.com/denisecase/pro-analytics-01) describing professional Python.
 
 These [audio guides](https://denisecase.github.io/pro-analytics-01-audio-guides/) are **supplementary only** and not a replacement for the written instructions. 
 The guides are **not necessarily recommended**. 
@@ -42,4 +42,5 @@ For more information about how they were generated see [AUDIO.md](AUDIO.md).
 </audio>
 
 ---
+[<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="16" height="16">](https://github.com/denisecase/pro-analytics-01-audio-guides)
 **IMPORTANT**: You will need to <mark>read the discussion and follow the steps and commands provided in the main repo: </mark>[<mark>pro-analytics-01</mark>](https://github.com/denisecase/pro-analytics-01).
