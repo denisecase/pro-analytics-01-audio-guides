@@ -1,0 +1,7 @@
+2025-05-19 12:57:55,902 - DEBUG - Registered checkpoint save hook for _speechbrain_save
+2025-05-19 12:57:55,902 - DEBUG - Registered checkpoint load hook for _speechbrain_load
+2025-05-19 12:57:55,902 - DEBUG - Registered checkpoint save hook for save
+2025-05-19 12:57:55,902 - DEBUG - Registered checkpoint load hook for load
+2025-05-19 12:57:55,978 - DEBUG - Registered checkpoint save hook for _save
+2025-05-19 12:57:55,978 - DEBUG - Registered checkpoint load hook for _recover
+2025-05-19 12:57:59,822 - INFO - Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.5.1.post0. To apply the upgrade to your files permanently, run `python -m pytorch_lightning.utilities.upgrade_checkpoint .venv/lib/python3.10/site-packages/whisperx/assets/pytorch_model.bin`

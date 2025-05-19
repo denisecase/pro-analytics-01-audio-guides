@@ -1,0 +1,293 @@
+0.031 - 0.532:  Welcome back.
+0.753 - 7.308: So last time we got your computer all set up for ProPython development, and we even initialized your first project.
+7.489 - 8.611: Yeah, laid the groundwork.
+8.832 - 9.253: Exactly.
+9.874 - 17.753: Now we're going to nail down that daily workflow, like the repeatable recipe you'll use every single time you sit down to code on your Python project.
+17.733 - 22.58:  This is about building that muscle memory, you know, the core routine.
+22.62 - 31.694: We're talking grabbing the latest updates, firing up the project environment, getting the tools installed, coding, testing, and then saving everything properly.
+31.774 - 32.295: Precisely.
+32.816 - 35.52: We'll walk through the materials that outline this exact process.
+35.94 - 38.965: The goal is a clear, effective routine you can rely on.
+39.046 - 40.208:  Okay, let's jump in.
+40.248 - 45.015: So, before you even think about writing code, what's the absolute first thing?
+45.175 - 45.376: Right.
+45.596 - 48.32: First thing, always, is to pull the latest changes.
+48.38 - 52.867: You need to update your local project with anything new that's happened on the remote repository, usually GitHub.
+53.348 - 53.808: Ah, okay.
+53.828 - 57.534: So, stuff others might have done, or even changes you made on a different computer.
+57.594 - 58.055: Exactly.
+58.095 - 59.998: It syncs your local version with the remote one.
+60.038 - 64.885: Super important for avoiding annoying merge conflicts later on.
+65.033 - 65.494:  Makes sense.
+66.056 - 66.958: So how do we do that?
+66.978 - 75.26: Okay, you'll open your terminal inside VS Code, right at the root of your project folder, and the command is git pull origin main.
+75.541 - 77.065: Git pull origin main, got it.
+77.185 - 81.557: Origin is like the main online repo, and main is a branch, yeah.
+81.537 - 82.378:  Usually, yes.
+83.059 - 84.2: That's the standard setup.
+84.621 - 91.609: Now, after you've done that initial pull and set things up, often just Git pull by itself will work for future updates on that main branch.
+91.67 - 92.951: Oh, handy shortcut.
+92.971 - 93.211: It is.
+93.712 - 95.474: But don't just run the command and forget it.
+95.494 - 98.138: You need to actually look at the output in the terminal.
+98.158 - 98.858: What am I looking for?
+99.099 - 103.644: Well, hopefully it just says already up to date, or it might list the files that were updated.
+103.664 - 108.27: The crucial thing is to watch for any messages about conflicts.
+108.301 - 108.602:  Right.
+108.702 - 109.203: Conflicts.
+109.343 - 110.847: That sounds like something we want to avoid.
+110.907 - 111.368: Definitely.
+111.448 - 116.139: And the best way to avoid them is just making this get pull the very first thing you do every single time.
+116.199 - 118.484: It keeps things smooth, especially when you're collaborating.
+118.725 - 118.925: Okay.
+118.965 - 121.672: So pull first, have it established.
+121.692 - 122.213: What's next?
+122.634 - 123.576: We've got the latest code.
+123.691 - 131.461:  Now you need to activate your project's specific environment, that isolated space we set up, living in the .venv folder.
+131.581 - 133.103: Ah, the .venv folder.
+133.163 - 135.827: It's like switching on the power for this specific project, right?
+135.847 - 137.128: Yeah, it's a good way to think about it.
+137.529 - 143.236: It ensures you're using the correct Python version and all the specific libraries, the dependencies just for this project.
+143.557 - 146.861: It stops things from getting mixed up with other Python stuff on your machine.
+146.881 - 147.502: Isolation.
+147.822 - 148.083: Yeah.
+148.163 - 148.784: Key concept.
+149.404 - 150.626: So how do we activate it?
+150.726 - 151.487: Does it differ?
+151.535 - 152.196:  It does, yeah.
+152.516 - 154.479: Depends on your operating system and your terminal.
+154.98 - 160.888: If you're on Windows using PowerShell, you'll type banv dac vnvscriptsactivate.
+161.409 - 163.592: Make sure you're in your project's main folder when you run that.
+163.732 - 165.154: vnvscriptsactivate, okay.
+165.515 - 166.917: And for Mac or Linux users?
+167.157 - 170.742: For Mac or Linux, using shells like vsh or bash,
+170.941 - 173.406:  It's source.vnvbinactivate.
+173.426 - 175.449: Again, run from the project root directory.
+175.67 - 177.754: Sourced.vnvbinactivate.
+177.974 - 178.154: OK.
+178.515 - 179.377: And how do I know it worked?
+179.617 - 180.779: You'll see a little visual cue.
+181.561 - 187.191: Right at the beginning of your terminal prompt, the name of the environment, usually VMV, will appear in parentheses.
+187.612 - 188.033: Oh, OK.
+188.053 - 189.977: Like, then, before the usual prompt.
+190.317 - 190.858: Exactly.
+190.898 - 194.485: That tells you you're now working inside that project's isolated environment.
+194.667 - 195.608:  and this activation.
+195.648 - 197.971: I have to do this every time I open a new terminal for the project.
+197.991 - 198.732: Yeah, every time.
+199.213 - 200.435: But here's a tip.
+200.455 - 202.517: Use the up arrow key in your terminal.
+202.898 - 207.644: It cycles through your previous command, so the activation command will probably be right there after you use it once.
+207.864 - 208.585: Nice shortcut.
+208.605 - 208.846: Yeah.
+209.647 - 213.332: And maybe jot down the command in your project's readme.md file, too.
+213.832 - 214.934: Just makes it easy to find.
+215.054 - 215.515: Good idea.
+215.815 - 216.776: Keep it handy.
+216.796 - 221.182: OK, so pulled the code, activated the .venv.
+221.683 - 222.103: Now what?
+222.324 - 223.425: Do we need tools?
+223.912 - 224.333:  We do.
+224.413 - 232.704: We need to make sure all the external packages, the libraries your project depends on that aren't part of Python's standard install, are actually installed in our .venv.
+232.944 - 233.084: Right.
+233.124 - 236.529: Things like pandas or numpy or other libraries we might need.
+236.549 - 237.891: These are usually listed somewhere.
+237.931 - 238.231: Correct.
+238.371 - 241.696: They're typically listed in a file called requirements.txt.
+241.936 - 243.719: Requirements.txt.
+243.739 - 244.299: Okay.
+244.319 - 246.342: And this is different from Python's built-in stuff.
+246.541 - 247.162:  Yeah, exactly.
+247.222 - 256.774: Python comes with a great standard library modules like Pathlib for files, Squite 3 for databases, UCS time, lots of useful things built right in.
+257.195 - 258.096: But for everything else?
+258.136 - 261.18: For everything else, especially specialized things, we install external packages.
+261.941 - 266.507: And requirements.txt tells pip, the package installer, what's needed.
+266.993 - 269.177:  OK, so how do we install from that file?
+269.197 - 273.486: Well, first, it's good practice to make sure pip itself and a couple of related tools are up to date.
+273.606 - 279.237: So on Windows and PowerShell, you'd run pi-m pip install upgrade pip setup tools wheel.
+279.317 - 281.742: Pi-nip install upgrade pip setup tools wheel.
+281.982 - 282.643: Got it.
+282.663 - 284.126: Upgrading the installer tools first.
+284.727 - 286.431: And on Mac or Linux, it's very similar.
+286.811 - 289.677: Python 3-m pip install upgrade pip setup tools wheel.
+289.775 - 290.876:  Okay, tools updated.
+291.177 - 292.838: Now for the actual project libraries.
+293.019 - 295.922: Now you install everything listed in that requirements.txt file.
+296.503 - 300.127: On windows.pyachimp, type in py-r requirements.txt.
+300.547 - 302.389: The ash-r flag means read from file.
+302.529 - 305.733: PyChimp install ash-r requirements.txt.
+305.753 - 306.574: Makes sense.
+306.594 - 307.195: And make Linux.
+307.595 - 308.116: Same idea.
+308.837 - 312.581: Python 3-m pip install ash-r requirements.txt.
+313.222 - 318.988: Pip will then go through the file and install each listed package into your active.venv.
+319.154 - 321.858:  Right, so they land inside that isolated environment.
+322.338 - 326.544: Now this requirements.txt file, does it ever change?
+326.564 - 327.305: Oh, absolutely.
+327.786 - 330.069: As your project grows, you'll find you need new libraries.
+330.089 - 334.115: You'll add the name of the new package to your requirements.txt file.
+334.135 - 338.2: And then I just run that pip install-r requirements.txt command again.
+338.28 - 339.963: Exactly, that'll install the new additions.
+340.043 - 343.828: It's a living document, really, that reflects your project's dependencies over time.
+343.808 - 344.733:  Okay, that makes sense.
+344.753 - 345.779: It evolves with the project.
+346.302 - 348.856: Right, so dot pull, activate, install.
+349.218 - 351.169: Are we ready to actually dot code now?
+351.335 - 351.916:  We are.
+351.936 - 353.418: This is the core part, right?
+353.839 - 355.441: Writing and running your Python code.
+355.501 - 361.249: This might be in Python script files, those ending in .py, or maybe Jupyter notebooks, the .ipynb files.
+361.329 - 362.611: Let's start with the .py scripts.
+362.651 - 363.572: What's the process there?
+363.692 - 366.256: Okay, first, crucial step inside VS Code.
+366.677 - 373.326: You need to tell it to use the Python interpreter from your .venv folder, because that's where all the stuff you just installed lives.
+373.506 - 374.568: How do I tell VS Code that?
+374.848 - 376.11: You use the command palette.
+376.259 - 386.415:  that's C-T-L-L plus shift plus P on Windows Linux or C-M-D plus shift plus P on Mac, then start typing Python, select interpreter.
+386.655 - 388.257: Python, select interpreter.
+388.277 - 388.458: Yeah.
+388.858 - 390.08: And you'll see a list.
+390.1 - 395.829: You need to choose the one that points to the Python executable inside your projects dot V-E-N-V folder.
+396.43 - 397.812: Usually shows the path clearly.
+397.792 - 398.734:  And once I select it.
+399.114 - 405.586: VS Code will then use that specific Python environment for things like running your code, linting, debugging, everything for that workspace.
+405.966 - 409.152: You'll often see the selected environment down in the status bar, bottom left.
+409.272 - 409.573: Got it.
+409.773 - 413.84: So, interpreter selected, .veenv, activated in the terminal.
+414.441 - 415.343: Now I can run my script.
+415.423 - 416.064: Now you can run it.
+416.245 - 420.492: From that activated terminal, you type something like py myfile.py on Windows.
+420.472 - 423.375:  replacing my file.py with my actual script name, of course.
+423.435 - 429.522: Of course, or on Mac Linux, it'd be python3-demoscript.py, again, using your real file name.
+429.682 - 431.244: And before running, .save.
+431.464 - 432.645: Yes, save often.
+433.006 - 438.872: Use autosave in VS Code if you like it, or just hit CLL plus S or CMD plus S habitually.
+438.892 - 443.577: And really make sure the script actually runs without errors before you think about committing it.
+443.998 - 445.079: All right, test, it works.
+445.78 - 448.943: What about Jupyter Notebooks, the .ipnb files?
+449.277 - 454.243:  Okay, for notebooks, first you'll probably need the Jupyter extension for VS Code if you don't have it already.
+454.563 - 461.832: You can grab that from the extensions view, ctrl plus shift plus x or cmd plus shift plus x. Just search for Jupyter.
+462.152 - 463.534: Install the Jupyter extension.
+463.674 - 463.975: Check.
+464.555 - 465.056: Then what?
+465.517 - 472.405: When you open a notebook file, VS Code needs to know which Python environment or kernel to use to execute the code cells.
+472.925 - 474.748: It should ideally prompt you to select one.
+474.968 - 475.909: And I should choose.
+476.007 - 483.416:  You should choose the kernel that corresponds to your project's .venv, the one you activated and installed packages into.
+483.717 - 484.237: Makes sense.
+484.578 - 485.539: What if it doesn't prompt me?
+485.98 - 487.281: You can select it manually.
+487.301 - 491.326: Look for a Select Kernel button, usually in the top right of the notebook editor.
+491.967 - 494.49: Or you can use the command palette again, Python.
+494.851 - 495.672: Select Interpreter.
+495.872 - 496.853: Often works for notebooks, too.
+496.913 - 499.076: Just make sure you pick the .venv one.
+499.176 - 501.759: OK, select the .venv kernel.
+502.08 - 503.562: And running code is just cell by cell?
+503.902 - 504.563: Yep.
+504.712 - 512.406:  Click in a cell, press Shift plus Enter to run it and move to the next cell, or E troll plus Enter to run it and stay put.
+512.586 - 513.928: And again, save your notebook.
+514.329 - 520.56: Sometimes, I've heard, sometimes notebooks don't seem to find the packages even if they're installed in the .venv.
+520.76 - 523.183:  Uh, yeah, that can occasionally happen.
+523.403 - 524.964: Sometimes restarting the kernel helps.
+524.984 - 528.148: There's usually a restart kernel button or menu option.
+528.528 - 528.828: Okay.
+528.848 - 540.541: Another thing people sometimes do is create a special folder named .vscode in their project root with a settings.json file inside to explicitly tell VSCode about the Python path.
+541.101 - 544.505: We won't dig into the specifics of that file now, but it's a potential fix.
+544.585 - 547.628: Good to know there are options and a key thing with notebooks.
+547.642 - 551.854:  Always, always run the entire notebook from top to bottom before you commit your changes.
+552.055 - 553.92: Make sure it runs cleanly all the way through.
+553.94 - 557.23: Right, ensures the saved version reflects the actual working code.
+557.311 - 557.652:  Okay.
+557.992 - 564.101: So just to recap the environment, keep the project folder open in VS Code, run terminal commands from the project root.
+564.282 - 564.682: Exactly.
+564.983 - 566.585: That context is important.
+566.605 - 567.947: And save, save, save your work.
+568.248 - 568.989: Can't say that enough.
+569.329 - 569.83: And testing.
+570.151 - 570.511: Yeah.
+570.531 - 571.353: Absolutely crucial, right?
+571.673 - 572.795: Don't commit broken code.
+572.895 - 573.396: Please don't.
+573.957 - 580.246: Use the debugger in VS Code, use simple print statements if you need to, whatever it takes to find and fix errors.
+580.747 - 585.394: If you're stuck on a tricky part, sometimes it's better to comment out that section temporarily.
+585.998 - 588.401:  just to get a version that actually runs before you commit.
+588.501 - 588.962: Exactly.
+589.102 - 594.709: Better to commit something that works, even if a feature is temporarily disabled, than something that crashes.
+595.19 - 595.891: Solid advice.
+596.031 - 596.251: OK.
+596.572 - 600.717: So let's say I've coded, I've saved, I've tested, and miracle of miracles, it all works.
+601.077 - 604.922: Now I need to save this progress officially using Git and push it to GitHub.
+605.143 - 605.763: Right.
+605.783 - 607.966: The grand finale of the workflow loop.
+608.687 - 612.432: This involves three main Git commands in sequence.
+612.452 - 612.993: Lay them on me.
+613.513 - 614.134: Command number one.
+614.495 - 615.516: Git add, add, add.
+615.749 - 617.051:  That period is important.
+617.111 - 622.059: It tells Git to stage all the changes you've made, new files, modified files in your project directory.
+622.42 - 625.465: It's like putting everything you want to save into a box, ready for the next step.
+625.665 - 626.887: Stage the changes with Git.
+627.428 - 627.708: Got it.
+627.749 - 628.309: What's step two?
+628.55 - 631.054: Git commit m, your descriptive commit message.
+631.435 - 636.383: This takes everything you just staged and creates a permanent snapshot in your project's history.
+636.883 - 640.93: The fm flag lets you add a message explaining what you did in this commit.
+641.112 - 643.657:  And that message should be descriptive.
+643.677 - 643.897: Yes.
+644.498 - 653.475: Replace your descriptive commit message with something short but meaningful about the changes, like, add user login feature or fix calculation bug in report.
+653.876 - 655.118: Enclose it in double quotes.
+655.499 - 657.523: Good messages are incredibly helpful later.
+657.843 - 659.366: Like a logbook for the project.
+659.466 - 659.787: Yeah.
+659.847 - 660.268: Makes sense.
+660.288 - 662.552: So git add, add git commit message.
+662.953 - 663.694: What's the final step?
+663.809 - 665.433:  Git push uOriginMain.
+665.693 - 672.388: This uploads your local commits, the snapshots you just made, up to the remote repository on GitHub, specifically to the main branch on Origin.
+672.648 - 673.771: Git push uOriginMain.
+674.132 - 674.212: Yep.
+674.232 - 675.635: And that again, origin main part.
+676.096 - 676.998: Do I need that every time?
+677.158 - 681.548: You usually only need the full uOriginMain the very first time you push a new branch.
+681.882 - 683.464:  it sets up the tracking relationship.
+683.645 - 687.67: After that, for subsequent pushes on the same branch, git push often works fine.
+687.891 - 690.394: Okay, so git push for most updates after the first one.
+690.715 - 693.699: And the key idea here is to do this add commit push cycle.
+694.08 - 695.722: Yes, commit frequently.
+695.762 - 704.194: Every time you finish a logical chunk of work or fix a specific bug or add a small feature, don't wait until you've changed hundreds of lines.
+704.461 - 709.529:  Small, frequent commits with good messages make the project history much easier to understand and manage.
+709.77 - 710.07: Got it.
+710.251 - 712.574: Small steps, clear messages.
+712.594 - 713.676: So that's the whole loop then.
+713.696 - 714.738: Let's recap the workflow.
+714.758 - 715.018: OK.
+715.299 - 717.643: Start with Git pull to get the latest code.
+717.663 - 718.825: Then activate the environment.
+719.205 - 719.446: Yeah.
+719.466 - 723.953: Spread it's scripts, activate on Windows, or source stuff in if you bind activate on Maclinx.
+723.973 - 724.855: Check to the VIN prompt.
+724.875 - 725.135: Right.
+725.295 - 727.359: Then make sure dependencies are installed.
+727.379 - 728.781: Update PIP with PIP install.
+729.25 - 736.639:  upgrade PIP setup tools wheel, then install project needs with PIP install of our requirements.txt.
+736.96 - 744.329: Select the .venv interpreter in VS code, then edit and run your code, whether it's .ps scripts or .ipnb notebooks.
+744.689 - 745.47: Test thoroughly.
+745.63 - 746.271: Make sure it works.
+746.431 - 747.232: Debug if needed.
+747.593 - 748.334: Save frequently.
+748.794 - 754.922: Then stage changes with git add, commit them with git, commit an mclear message, and finally upload with git push.
+755.102 - 755.743: That's a cycle.
+755.823 - 758.987: Pull, activate, install, code, test, commit, push.
+759.068 - 767.555:  By doing this consistently, you're making sure you're up to date, working in the right environment, have the tools you need, and your work is saved and shared properly.
+767.816 - 768.277: Exactly.
+768.298 - 770.023: It becomes your professional rhythm.
+770.037 - 777.069:  It might feel like a lot of steps at first, I get that, but honestly, practice this a few times and it'll become second nature.
+777.089 - 779.794: Just the standard way you start and end your coding sessions.
+779.974 - 780.595: Absolutely.
+780.635 - 785.584: We really hope this deep dive has helped clarify this essential workflow.
+785.985 - 789.23: Are there any parts of this that still feel unclear?
+789.29 - 792.636: Any challenges you've run into trying to set up your own process?
+792.717 - 795.834:  Yeah, definitely experiment with these commands, get comfortable with them.
+796.256 - 800.56: This kind of consistent process really is a cornerstone of professional development.
+800.781 - 806.17: It just makes everything smoother, especially collaboration, and leads to more solid projects in the long run.
